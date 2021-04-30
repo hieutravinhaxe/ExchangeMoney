@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ExchangeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/number1"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_margin="15sp"
+            android:background="@drawable/text_br"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Nhập giá trị cần đổi"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerRate1"
+                android:layout_width="100sp"
+                android:layout_height="50sp"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:background="@drawable/btn_br"
+                android:contextClickable="false" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="100sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/btn_br"
+                android:gravity="fill" />
+
+            <Spinner
+                android:id="@+id/spinnerRate2"
+                android:layout_width="100sp"
+                android:layout_height="50sp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/btn_br" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/number2"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="30sp" />
+    </LinearLayout>
+</FrameLayout>
